@@ -6,7 +6,6 @@ class Menoh < Formula
                                                      :revision => "3515c8ceb88bfb0a5b2c2b208efa7f663a7d5c15"
 
   depends_on "cmake" => :build
-  depends_on "pkg-config" => :build
   depends_on "mkl-dnn"
   depends_on "protobuf"
 

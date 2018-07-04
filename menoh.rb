@@ -18,13 +18,12 @@ class Menoh < Formula
   test do
     (testpath/"test.c").write <<~EOS
       #include <stdio.h>
+      #include <string.h>
       #include <menoh/menoh.h>
 
       int main()
       {
-        char *s = menoh_get_last_error_message();
-        printf(s);
-        return 0;
+          return !(strlen(menoh_get_last_error_message())==0);
       }
     EOS
     system ENV.cc, "test.c", "-I#{include}", "-L#{lib}", "-lmenoh", "-o", "test"

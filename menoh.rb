@@ -4,6 +4,7 @@ class Menoh < Formula
   # pull from git tag to get submodules
   url "https://github.com/pfnet-research/menoh.git", :tag => "v1.0.2",
                                                      :revision => "3515c8ceb88bfb0a5b2c2b208efa7f663a7d5c15"
+  head "https://github.com/pfnet-research/menoh.git"
 
   depends_on "cmake" => :build
   depends_on "mkl-dnn"

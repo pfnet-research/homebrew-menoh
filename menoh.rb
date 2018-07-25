@@ -2,8 +2,8 @@ class Menoh < Formula
   desc "DNN inference library with MKL-DNN"
   homepage "https://github.com/pfnet-research/menoh/"
   # pull from git tag to get submodules
-  url "https://github.com/pfnet-research/menoh.git", :tag => "v1.0.2",
-                                                     :revision => "3515c8ceb88bfb0a5b2c2b208efa7f663a7d5c15"
+  url "https://github.com/pfnet-research/menoh.git", :tag => "v1.0.3",
+                                                     :revision => "f503afe60fca7a996a434c72fc20fc93cc19b7eb"
   head "https://github.com/pfnet-research/menoh.git"
 
   depends_on "cmake" => :build

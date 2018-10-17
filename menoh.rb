@@ -11,7 +11,7 @@ class Menoh < Formula
   depends_on "protobuf"
 
   def install
-    system "cmake", ".", *std_cmake_args
+    system "cmake", ".", "-DENABLE_EXAMPLE=OFF", *std_cmake_args
     system "make", "install"
   end
 
